@@ -7,55 +7,64 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: "AI-Powered Analytics Dashboard",
-      description: "A comprehensive analytics platform leveraging machine learning algorithms to provide real-time business insights and predictive analytics for enterprise clients.",
-      technologies: ["Python", "TensorFlow", "React", "GCP"],
-      projectUrl: "https://example-project-1.com",
-      githubUrl: "https://github.com/example/project-1",
-      type: "project"
+      title: "Full Stack Engineer Freelance",
+      description: "Built and deployed a full-stack Django web app for a local bakery with dynamic inventory management using MySQL. The project, which was deployed on DigitalOcean and utilized Nginx for static content delivery, established the bakery's online presence.",
+      technologies: ["Django", "Nginx", "Gunicorn", "JavaScript"],
+      projectUrl: "https://portuguesetastydesserts.com/",
+      githubUrl: null,
+      type: "experience"
     },
     {
       id: 2,
-      title: "Intelligent Process Automation System",
-      description: "Developed an AI agent system that automates complex business processes, reducing manual work by 75% through natural language processing and workflow optimization.",
-      technologies: ["Python", "LangChain", "PostgreSQL", "Docker"],
-      projectUrl: "https://example-project-2.com",
-      githubUrl: "https://github.com/example/project-2",
-      type: "project"
+      title: "Virtual Data Analytic Intern",
+      description: "Analyzed large-scale telemetry data using Tableau and Excel to identify and visualize key operational insights and support business decisions. Developed interactive dashboards with calculated fields to provide clear answers to critical business questions.",
+      technologies: ["Tableau", "Excel"],
+      type: "experience",
+      projectUrl: "https://www.deloitte.com/us/en.html",
+      githubUrl: null,
+      company: "Deloitte"
     },
     {
       id: 3,
-      title: "Computer Vision Quality Control",
-      description: "Built a computer vision system for manufacturing quality control, achieving 99.2% accuracy in defect detection using PyTorch and custom CNN architectures.",
-      technologies: ["PyTorch", "OpenCV", "Python", "Kubernetes"],
+      title: "DraftKings Sports Betting Performance Tracker",
+      description: "Designed and implemented a six-microservices architecture using RESTful APIs to analyze and display sports betting data. The system, which included services for web scraping, data analysis, and frontend visualization, was hosted on cloud infrastructure for scalability.",
+      technologies: ["Terraform", "MySQL", "Python", "RabbitMQ", "Nginx"],
       projectUrl: "https://example-project-3.com",
-      githubUrl: "https://github.com/example/project-3",
+      githubUrl: "https://github.com/codingadventurestoday/DraftKings_Data_Analyze",
       type: "project"
     },
     {
       id: 4,
-      title: "Natural Language Processing API",
-      description: "Created a scalable NLP API service for sentiment analysis and text classification, processing over 1M requests daily with sub-100ms response times.",
-      technologies: ["Python", "FastAPI", "Transformers", "Redis"],
-      projectUrl: "https://example-project-4.com",
-      githubUrl: "https://github.com/example/project-4",
+      title: "GoLang Cloud Storage Solution with AWS S3",
+      description: "Developed a robust, production-ready file storage system using Amazon S3 for secure, scalable, and durable object storage. This backend solution, secured with presigned URLs and private buckets, can handle large assets like video streams with high performance and resiliency.",
+      technologies: ["GoLang", "Amazon S3", "AWS CloudFront"],
+      projectUrl: null,
+      githubUrl: null,
       type: "project"
     },
     {
       id: 5,
-      title: "Software Engineer Intern",
-      description: "Contributed to the development of machine learning infrastructure and data pipelines. Implemented automated testing frameworks and optimized model deployment processes, resulting in 40% faster iteration cycles.",
-      technologies: ["Python", "Terraform", "Git", "CI/CD"],
-      projectUrl: "https://company-website.com",
+      title: "High-Performance Go Web Server & JSON API",
+      description: "Built a production-ready JSON API and HTTP web server from scratch using Go, focusing on core backend development principles for a highly performant and secure application. The project incorporated advanced features such as webhooks for enhanced functionality.",
+      technologies: ["GoLang", "PostgreSQL", "JSON", "HTTP"],
+      projectUrl: null,
       githubUrl: null,
-      type: "experience",
-      company: "Tech Innovation Corp"
+      type: "project",
+    },
+        {
+      id: 6,
+      title: "Apprenticeship Open Role Web Crawler",
+      description: "Developed a Python web crawler that uses libraries like BeautifulSoup4 and Selenium to find and return information about software engineering apprenticeship openings from various companies.",
+      technologies: ["Python", "Web Scrapping", "Selenium", "Git"],
+      projectUrl: "https://company-website.com",
+      githubUrl: "https://github.com/codingadventurestoday/Automate_Apprenticeship",
+      type: "project",
     }
   ];
 
   return (
-    <section id="projects" className="py-20 bg-background">
-      <div className="container mx-auto px-6">
+    <section id="projects" className="py-12 sm:py-20 bg-background">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-16">
           <h2 className="text-heading font-bold mb-4">
             Projects & Experience
@@ -65,7 +74,7 @@ const ProjectsSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {projects.map((item) => (
             <Card 
               key={item.id} 

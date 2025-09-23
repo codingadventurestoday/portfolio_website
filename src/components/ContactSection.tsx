@@ -4,8 +4,8 @@ import { Mail, Linkedin, Github, MessageCircle } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-20 bg-background">
-      <div className="container mx-auto px-6">
+    <section id="contact" className="py-12 sm:py-20 bg-background">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-16">
           <h2 className="text-heading font-bold mb-4">
             Let's Connect
@@ -29,18 +29,18 @@ const ContactSection = () => {
             </CardHeader>
             
             <CardContent className="space-y-8">
-              <div className="grid md:grid-cols-3 gap-6">
+              <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6">
                 <Button 
                   variant="outline" 
                   size="lg"
-                  className="h-auto p-6 flex flex-col items-center gap-3 hover:shadow-card transition-all duration-300 hover:border-primary/50"
+                  className="h-auto p-4 sm:p-6 flex flex-col items-center gap-3 hover:shadow-card transition-all duration-300 hover:border-primary/50"
                   asChild
                 >
                   <a href="mailto:jeremy.phillips.engineering@gmail.com">
                     <Mail className="h-6 w-6 text-primary" />
                     <div className="text-center">
                       <p className="font-medium">Email</p>
-                      <p className="text-sm text-muted-foreground">jeremy.phillips.engineering@gmail.com</p>
+                      <p className="text-xs sm:text-sm text-muted-foreground break-all">Direct Communication</p>
                     </div>
                   </a>
                 </Button>
@@ -48,14 +48,14 @@ const ContactSection = () => {
                 <Button 
                   variant="outline" 
                   size="lg"
-                  className="h-auto p-6 flex flex-col items-center gap-3 hover:shadow-card transition-all duration-300 hover:border-primary/50"
+                  className="h-auto p-4 sm:p-6 flex flex-col items-center gap-3 hover:shadow-card transition-all duration-300 hover:border-primary/50"
                   asChild
                 >
                   <a href="https://www.linkedin.com/in/jeremy-phillips-swe" target="_blank" rel="noopener noreferrer">
                     <Linkedin className="h-6 w-6 text-primary" />
                     <div className="text-center">
                       <p className="font-medium">LinkedIn</p>
-                      <p className="text-sm text-muted-foreground">Professional Network</p>
+                      <p className="text-xs sm:text-sm text-muted-foreground">Professional Network</p>
                     </div>
                   </a>
                 </Button>
@@ -63,14 +63,14 @@ const ContactSection = () => {
                 <Button 
                   variant="outline" 
                   size="lg"
-                  className="h-auto p-6 flex flex-col items-center gap-3 hover:shadow-card transition-all duration-300 hover:border-primary/50"
+                  className="h-auto p-4 sm:p-6 flex flex-col items-center gap-3 hover:shadow-card transition-all duration-300 hover:border-primary/50"
                   asChild
                 >
                   <a href="https://github.com/codingadventurestoday/" target="_blank" rel="noopener noreferrer">
                     <Github className="h-6 w-6 text-primary" />
                     <div className="text-center">
                       <p className="font-medium">GitHub</p>
-                      <p className="text-sm text-muted-foreground">Code Repository</p>
+                      <p className="text-xs sm:text-sm text-muted-foreground">Code Repository</p>
                     </div>
                   </a>
                 </Button>

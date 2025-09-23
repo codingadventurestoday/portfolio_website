@@ -44,8 +44,8 @@ const EducationSection = () => {
   ];
 
   return (
-    <section id="education" className="py-20 bg-gradient-subtle">
-      <div className="container mx-auto px-6">
+    <section id="education" className="py-12 sm:py-20 bg-gradient-subtle">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-16">
           <h2 className="text-heading font-bold mb-4">
             Education & Technologies
